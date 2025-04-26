@@ -41,6 +41,39 @@ class Home extends StatelessWidget {
         centerTitle:true,
         title: Text('Flutter 1'),
       ),
+      body:Container(
+
+        height:1000 ,
+        width: 1000,
+        color:Colors.lightGreenAccent,
+
+        child:Column(
+          //mainAxisAlignment:MainAxisAlignment.spaceBetween,
+          mainAxisAlignment:MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            SizedBox(height: 1000,),
+            Text('maha'),
+            Text('ma'),
+            Text('ammu'),
+            Text('brother'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children:[
+                Text('this is row'),
+
+                Text('this is row'),
+                Text('this is row'),
+                SizedBox(height: 200,width: 250,),
+                Icon(Icons.add_alert,color: Colors.red,),
+              ]
+            )
+          ]
+
+
+        )
+
+      )
     );
   }
 }
