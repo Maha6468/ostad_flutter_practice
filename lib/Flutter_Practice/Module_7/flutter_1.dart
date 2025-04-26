@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
           mainAxisAlignment:MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            SizedBox(height: 1000,),
+            SizedBox(height: 100,),
             Text('maha'),
             Text('ma'),
             Text('ammu'),
