@@ -7,19 +7,19 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:Text('messenger',
-          style: TextStyle(fontSize:30.5,
-            color:Colors.white,
+        title: Text('messenger',
+          style: TextStyle(fontSize: 30.5,
+            color: Colors.white,
             fontWeight: FontWeight.w900,
             //fontStyle: FontStyle.italic,
           ),
         ),
-       backgroundColor:Colors.black ,
-       elevation:10 ,
+        backgroundColor: Colors.black,
+        elevation: 10,
         actions: [
-          Icon(Icons.tab,color: Colors.white,),
+          Icon(Icons.tab, color: Colors.white,),
           SizedBox(width: 10,),
-          Icon(Icons.facebook,color: Colors.white,),
+          Icon(Icons.facebook, color: Colors.white,),
         ],
       ),
       body: Container(
@@ -28,250 +28,290 @@ class Home extends StatelessWidget {
           children: [
             Container(
               height: 40,
-              margin:EdgeInsets.symmetric(vertical: 2,horizontal: 20) ,
+              width: double.infinity,
+              margin: EdgeInsets.symmetric(vertical: 2, horizontal: 20),
               padding: EdgeInsets.all(11),
-              //color:Colors.blueGrey,
               decoration: BoxDecoration(
-                color: Colors.white54,
-                  borderRadius: BorderRadius.only(
-                      topLeft:Radius.circular(50),
-                      topRight: Radius.circular(50),
-                      bottomLeft: Radius.circular(50),
-                      bottomRight: Radius.circular(50))),
+                  color: Colors.white54,
+                  borderRadius: BorderRadius.circular(80)
+              ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.search,
-                    color: Colors.black,),
-                  SizedBox(width: 5,),
-                  Text('Search',selectionColor: Colors.white,
+                  Row(
+                    children: [
+                      Icon(Icons.search,
+                        color: Colors.white,size: 26,),
+                      //SizedBox(width: 7,),
+                      Text('Search',
+                        style: TextStyle(fontWeight:FontWeight.bold,color: Colors.white),
+                      ),
+                    ],
                   ),
+                  Icon(Icons.account_balance,color: Colors.white,),
                 ],
               ),
             ),
-
+            SizedBox(height: 20,),
             Container(
               margin: EdgeInsets.only(left: 5),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(1),
-                  topLeft: Radius.circular(1),
-                  bottomRight: Radius.circular(1),
-                  bottomLeft: Radius.circular(1),
-                ),
-              ),
-              //color: Colors.white60,
-               height: 80,
-               width: 580,
-              child:SingleChildScrollView(
-                scrollDirection:Axis.horizontal,
+              height: 120,
+              width:double.infinity,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Container(
-                     // child:Center(child: Text('Maha',)),
-                      height:80,
-                      width: 70,
-                      margin: EdgeInsets.all(4),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage('images/maha.jpg')),
-                        border: Border.all(
-                          width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
-                      ),
+                    Column(
+                      children: [
+                        Container(
+                          // child:Center(child: Text('Maha',)),
+                          height: 80,
+                          width: 70,
+                          margin: EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('images/maha.jpg'),),
+                            border: Border.all(
+                                width: 3, color: Colors.greenAccent),
+                            color: Colors.white54,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        //SizedBox(height: 1,),
+                        Text('Maha',style: TextStyle(color: Colors.white),),
+                      ],
                     ),
-                    Container(
-                      //color: Colors.blue,
-                     // child:Center(child: Text('Saim',)),
-                      height:75,
-                      width: 65,
-                      margin: EdgeInsets.all(4),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage('images/saim.jpg')),
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
-                      ),
+                    Column(
+                      children: [
+                        Container(
+                          //color: Colors.blue,
+                          // child:Center(child: Text('Saim',)),
+                          height: 80,
+                          width: 70,
+                          margin: EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('images/saim.jpg')),
+                            border: Border.all(
+                                width: 3, color: Colors.greenAccent),
+                            color: Colors.white54,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text('Saim',style: TextStyle(color: Colors.white),),
+                      ],
                     ),
-                    Container(
-                      //color: Colors.blue,
-                     // child:Center(child: Text('Mariya',)),
-                      height:75,
-                      width: 65,
-                      margin: EdgeInsets.all(4),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage('images/mari.jpg')),
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
-                      ),
+                    Column(
+                      children: [
+                        Container(
+                          //color: Colors.blue,
+                          // child:Center(child: Text('Mariya',)),
+                          height: 80,
+                          width: 70,
+                          margin: EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('images/mari.jpg')),
+                            border: Border.all(
+                                width: 3, color: Colors.greenAccent),
+                            color: Colors.white54,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text('Mariya',style: TextStyle(color: Colors.white),),
+                      ],
                     ),
-                    Container(
-                      //color: Colors.blue,
-                      //child:Center(child: Text('Rikta',)),
-                      height:75,
-                      width: 65,
-                      margin: EdgeInsets.all(4),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage('images/rikta.jpg')),
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
-                      ),
+                    Column(
+                      children: [
+                        Container(
+                          //color: Colors.blue,
+                          //child:Center(child: Text('Rikta',)),
+                          height: 80,
+                          width: 70,
+                          margin: EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('images/rikta.jpg')),
+                            border: Border.all(
+                                width: 3, color: Colors.greenAccent),
+                            color: Colors.white54,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text('Rikta',style: TextStyle(color: Colors.white),),
+                      ],
                     ),
-                    Container(
-                      //color: Colors.blue,
-                      //child:Center(child: Text('Ibnul',)),
-                      height:75,
-                      width: 65,
-                      margin: EdgeInsets.all(4),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage('images/ibnul.jpg')),
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
-                      ),
+                    Column(
+                      children: [
+                        Container(
+                          //color: Colors.blue,
+                          //child:Center(child: Text('Ibnul',)),
+                          height: 80,
+                          width: 70,
+                          margin: EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('images/ibnul.jpg')),
+                            border: Border.all(
+                                width: 3, color: Colors.greenAccent),
+                            color: Colors.white54,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text('Ibnul',style: TextStyle(color: Colors.white),),
+                      ],
                     ),
-                    Container(
-                      //color: Colors.blue,
-                      //child:Center(child: Text('Naim',)),
-                      height:75,
-                      width: 65,
-                      margin: EdgeInsets.all(4),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage('images/naim.jpg')),
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
-                      ),
+                    Column(
+                      children: [
+                        Container(
+                          //color: Colors.blue,
+                          //child:Center(child: Text('Naim',)),
+                          height: 80,
+                          width: 70,
+                          margin: EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('images/naim.jpg')),
+                            border: Border.all(
+                                width: 3, color: Colors.greenAccent),
+                            color: Colors.white54,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text('Naim',style: TextStyle(color: Colors.white),),
+                      ],
                     ),
-                    Container(
-                      //color: Colors.blue,
-                      //child:Center(child: Text('Yamin',)),
-                      height:75,
-                      width: 65,
-                      margin: EdgeInsets.all(4),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage('images/yamin.jpg')),
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
-                      ),
+                    Column(
+                      children: [
+                        Container(
+                          //color: Colors.blue,
+                          //child:Center(child: Text('Yamin',)),
+                          height: 80,
+                          width: 70,
+                          margin: EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('images/yamin.jpg')),
+                            border: Border.all(
+                                width: 3, color: Colors.greenAccent),
+                            color: Colors.white54,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text('Yamin',style: TextStyle(color: Colors.white),),
+                      ],
                     ),
                   ],
                 ),
               ),
             ),
 
-            Container(
-              margin: EdgeInsets.only(left:10,top: 30),
-              color: Colors.black,
-               height: 500,
-               width: 500,
-              child: SingleChildScrollView(
-
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 80,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
+            Expanded(
+              child: Container(
+                margin: EdgeInsets.only(left: 5, top: 15),
+                color: Colors.black,
+                height: 500,
+                width: 500,
+                child: SingleChildScrollView(
+              
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 80,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 4, color: Colors.greenAccent),
+                          color: Colors.white54,
+                          shape: BoxShape.circle,
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
+                      Container(
+                        height: 80,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 4, color: Colors.greenAccent),
+                          color: Colors.white54,
+                          shape: BoxShape.circle,
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
+                      Container(
+                        height: 80,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 4, color: Colors.greenAccent),
+                          color: Colors.white54,
+                          shape: BoxShape.circle,
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
+                      Container(
+                        height: 80,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 4, color: Colors.greenAccent),
+                          color: Colors.white54,
+                          shape: BoxShape.circle,
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
+                      Container(
+                        height: 80,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 4, color: Colors.greenAccent),
+                          color: Colors.white54,
+                          shape: BoxShape.circle,
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
+                      Container(
+                        height: 80,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 4, color: Colors.greenAccent),
+                          color: Colors.white54,
+                          shape: BoxShape.circle,
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
+                      Container(
+                        height: 80,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 4, color: Colors.greenAccent),
+                          color: Colors.white54,
+                          shape: BoxShape.circle,
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
+                      Container(
+                        height: 80,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 4, color: Colors.greenAccent),
+                          color: Colors.white54,
+                          shape: BoxShape.circle,
+                        ),
                       ),
-                    ),
-                    Container(
-                      height: 80,
-                      width: 70,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                            width: 4,color: Colors.greenAccent),
-                        color: Colors.white54,
-                        shape: BoxShape.circle,
+                      Container(
+                        height: 80,
+                        width: 70,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                              width: 4, color: Colors.greenAccent),
+                          color: Colors.white54,
+                          shape: BoxShape.circle,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -281,3 +321,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+
