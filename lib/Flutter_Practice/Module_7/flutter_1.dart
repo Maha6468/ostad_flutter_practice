@@ -69,77 +69,98 @@ class Home extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      child:Center(child: Text('Maha',)),
-                      height:75,
-                      width: 65,
+                     // child:Center(child: Text('Maha',)),
+                      height:80,
+                      width: 70,
                       margin: EdgeInsets.all(4),
                       decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage('images/maha.jpg')),
+                        border: Border.all(
+                          width: 4,color: Colors.greenAccent),
                         color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
                     Container(
                       //color: Colors.blue,
-                      child:Center(child: Text('Saim',)),
+                     // child:Center(child: Text('Saim',)),
                       height:75,
                       width: 65,
                       margin: EdgeInsets.all(4),
                       decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage('images/saim.jpg')),
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
                         color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
                     Container(
                       //color: Colors.blue,
-                      child:Center(child: Text('Mariya',)),
+                     // child:Center(child: Text('Mariya',)),
                       height:75,
                       width: 65,
                       margin: EdgeInsets.all(4),
                       decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage('images/mari.jpg')),
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
                         color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
                     Container(
                       //color: Colors.blue,
-                      child:Center(child: Text('Rikta',)),
+                      //child:Center(child: Text('Rikta',)),
                       height:75,
                       width: 65,
                       margin: EdgeInsets.all(4),
                       decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage('images/rikta.jpg')),
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
                         color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
                     Container(
                       //color: Colors.blue,
-                      child:Center(child: Text('Ibnul',)),
+                      //child:Center(child: Text('Ibnul',)),
                       height:75,
                       width: 65,
                       margin: EdgeInsets.all(4),
                       decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage('images/ibnul.jpg')),
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
                         color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
                     Container(
                       //color: Colors.blue,
-                      child:Center(child: Text('Naim',)),
+                      //child:Center(child: Text('Naim',)),
                       height:75,
                       width: 65,
                       margin: EdgeInsets.all(4),
                       decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage('images/naim.jpg')),
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
                         color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
                     Container(
                       //color: Colors.blue,
-                      child:Center(child: Text('Yamin',)),
+                      //child:Center(child: Text('Yamin',)),
                       height:75,
                       width: 65,
                       margin: EdgeInsets.all(4),
                       decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage('images/yamin.jpg')),
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
                         color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
@@ -164,7 +185,9 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 70,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
+                        color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -172,7 +195,9 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 70,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
+                        color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -180,7 +205,9 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 70,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
+                        color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -188,7 +215,9 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 70,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
+                        color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -196,7 +225,9 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 70,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
+                        color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -204,7 +235,9 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 70,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
+                        color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -212,7 +245,9 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 70,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
+                        color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -220,7 +255,9 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 70,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
+                        color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -228,7 +265,9 @@ class Home extends StatelessWidget {
                       height: 80,
                       width: 70,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(
+                            width: 4,color: Colors.greenAccent),
+                        color: Colors.white54,
                         shape: BoxShape.circle,
                       ),
                     ),
