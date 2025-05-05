@@ -102,46 +102,14 @@ class _LoginPageState extends State<LoginPage> {
       //    ),
       //   ),
       // ),
-      ListView(
-        children: [
-          Container(
-            height: 200,
-            width: 50,
-            color: Colors.cyan,
-          ),
-          Container(
-            height: 200,
-            width: 50,
-            color: Colors.purpleAccent,
-          ),
-          Container(
-            height: 200,
-            width: 50,
-            color: Colors.deepOrangeAccent,
-          ),
-          Container(
-            height: 200,
-            width: 50,
-            color: Colors.yellowAccent,
-          ),
-          Container(
-            height: 200,
-            width: 50,
-            color: Colors.deepPurple,
-          ),
-          Container(
-            height: 200,
-            width: 50,
-            color: Colors.white70,
-          ),
-          Container(
-            height: 200,
-            width: 50,
-            color: Colors.green,
-          ),
-
-
-        ],
+      ListView.builder(
+         itemCount: 20,
+          itemBuilder:(context,index){
+           return Text('Item $index',style: TextStyle(
+             fontSize: 20,
+             color:Colors.red
+           ),);
+          },
       )
     );
   }
