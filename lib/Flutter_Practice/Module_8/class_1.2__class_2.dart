@@ -20,86 +20,129 @@ class _LoginPageState extends State<LoginPage> {
         backgroundColor: Colors.cyan,
         centerTitle: true,
       ),
-      body: Center(
-        child: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Image.asset('images/maha.jpg',
+      body:
+
+      // Center(
+      //   child: SingleChildScrollView(
+      //   child: Column(
+      //     mainAxisAlignment: MainAxisAlignment.start,
+      //     children: [
+      //       Image.asset('images/maha.jpg',
+      //       height: 200,
+      //       width: 150,
+      //       fit: BoxFit.fitHeight,),
+      //       //Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Facebook_logo_%282023%29.svg/2560px-Facebook_logo_%282023%29.svg.png',),
+      //       SizedBox(height: 20,),
+      //       Text('login with your phone and password'),
+      //       SizedBox(height:5,),
+      //       Form(
+      //         key: _formKey,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.start,
+      //           children: [
+      //             Text('Phone number'),
+      //            SizedBox(height: 5,),
+      //             TextFormField(
+      //               controller: phoneController,
+      //                 decoration: InputDecoration(
+      //                     hintText: 'Phone number',
+      //                     border: OutlineInputBorder(
+      //                         borderRadius: BorderRadius.circular(50)
+      //                     )
+      //                 ),
+      //                 validator: (value){
+      //                   if(value==null||value.isEmpty){
+      //                     return 'please enter your phone numbr';
+      //                   }else{
+      //                     return null;
+      //                   }
+      //                 }
+      //             ),
+      //             SizedBox(height: 5,),
+      //             TextFormField(
+      //               controller: passwordController,
+      //                 decoration: InputDecoration(
+      //                     hintText: 'Password',
+      //                     border: OutlineInputBorder(
+      //                         borderRadius: BorderRadius.circular(50)
+      //                     )
+      //                 ),
+      //                 validator: (value){
+      //                   if(value==null||value.isEmpty){
+      //                     return 'please enter your phone password';
+      //                   }else if(value.length<6){
+      //                     return 'password must be at least 6 characters';
+      //                   }
+      //                   else{
+      //                     return null;
+      //                   }
+      //                 }
+      //             ),
+      //             SizedBox(height: 5,),
+      //             SizedBox(
+      //               width: 300,
+      //
+      //               child: ElevatedButton(onPressed: (){
+      //                 if(_formKey.currentState!.validate()){
+      //                   ScaffoldMessenger.of(context).showSnackBar(
+      //                     SnackBar(content: Text('Login Succesful')),
+      //                   );
+      //                 }
+      //
+      //                 Navigator.push(context,
+      //                   MaterialPageRoute(builder: (context)=>M8_Class_1())
+      //                 );
+      //
+      //               }, child: Text('Login',)),
+      //             )
+      //           ],
+      //         ),
+      //        ),
+      //      ],
+      //    ),
+      //   ),
+      // ),
+      ListView(
+        children: [
+          Container(
             height: 200,
-            width: 150,
-            fit: BoxFit.fitHeight,),
-            //Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Facebook_logo_%282023%29.svg/2560px-Facebook_logo_%282023%29.svg.png',),
-            SizedBox(height: 20,),
-            Text('login with your phone and password'),
-            SizedBox(height:5,),
-            Form(
-              key: _formKey,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text('Phone number'),
-                 SizedBox(height: 5,),
-                  TextFormField(
-                    controller: phoneController,
-                      decoration: InputDecoration(
-                          hintText: 'Phone number',
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(50)
-                          )
-                      ),
-                      validator: (value){
-                        if(value==null||value.isEmpty){
-                          return 'please enter your phone numbr';
-                        }else{
-                          return null;
-                        }
-                      }
-                  ),
-                  SizedBox(height: 5,),
-                  TextFormField(
-                    controller: passwordController,
-                      decoration: InputDecoration(
-                          hintText: 'Password',
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(50)
-                          )
-                      ),
-                      validator: (value){
-                        if(value==null||value.isEmpty){
-                          return 'please enter your phone password';
-                        }else if(value.length<6){
-                          return 'password must be at least 6 characters';
-                        }
-                        else{
-                          return null;
-                        }
-                      }
-                  ),
-                  SizedBox(height: 5,),
-                  SizedBox(
-                    width: 300,
+            width: 50,
+            color: Colors.cyan,
+          ),
+          Container(
+            height: 200,
+            width: 50,
+            color: Colors.purpleAccent,
+          ),
+          Container(
+            height: 200,
+            width: 50,
+            color: Colors.deepOrangeAccent,
+          ),
+          Container(
+            height: 200,
+            width: 50,
+            color: Colors.yellowAccent,
+          ),
+          Container(
+            height: 200,
+            width: 50,
+            color: Colors.deepPurple,
+          ),
+          Container(
+            height: 200,
+            width: 50,
+            color: Colors.white70,
+          ),
+          Container(
+            height: 200,
+            width: 50,
+            color: Colors.green,
+          ),
 
-                    child: ElevatedButton(onPressed: (){
-                      if(_formKey.currentState!.validate()){
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Login Succesful')),
-                        );
-                      }
 
-                      Navigator.push(context,
-                        MaterialPageRoute(builder: (context)=>M8_Class_1())
-                      );
-
-                    }, child: Text('Login',)),
-                  )
-                ],
-              ),
-             ),
-           ],
-         ),
-        ),
-      ),
+        ],
+      )
     );
   }
 }
