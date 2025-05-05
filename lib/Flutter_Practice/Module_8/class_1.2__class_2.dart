@@ -105,10 +105,13 @@ class _LoginPageState extends State<LoginPage> {
       ListView.builder(
          itemCount: 20,
           itemBuilder:(context,index){
-           return ListTile(
-             leading: Icon(Icons.phone),
-             trailing: Icon(Icons.delete),
-             title: Text('01819556633 $index'),
+           return Card(
+             child: ListTile(
+               leading: Icon(Icons.phone),
+               trailing: Icon(Icons.delete),
+               title: Text('Maha '),
+               subtitle: Text('01819556633 $index'),
+             ),
            );
           },
       )
