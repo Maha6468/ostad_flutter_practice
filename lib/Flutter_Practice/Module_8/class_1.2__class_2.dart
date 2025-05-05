@@ -105,10 +105,11 @@ class _LoginPageState extends State<LoginPage> {
       ListView.builder(
          itemCount: 20,
           itemBuilder:(context,index){
-           return Text('Item $index',style: TextStyle(
-             fontSize: 20,
-             color:Colors.red
-           ),);
+           return ListTile(
+             leading: Icon(Icons.phone),
+             trailing: Icon(Icons.delete),
+             title: Text('01819556633 $index'),
+           );
           },
       )
     );
