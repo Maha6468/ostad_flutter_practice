@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ostad_flutter_practice/Flutter_Practice/Module_8/class_1.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -24,8 +25,14 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            Image.asset('images/maha.jpg',
+            height: 200,
+            width: 150,
+            fit: BoxFit.fitHeight,),
+            //Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Facebook_logo_%282023%29.svg/2560px-Facebook_logo_%282023%29.svg.png',),
+            SizedBox(height: 20,),
             Text('login with your phone and password'),
-            SizedBox(height: 5,),
+            SizedBox(height:5,),
             Form(
               key: _formKey,
               child: Column(
@@ -79,14 +86,19 @@ class _LoginPageState extends State<LoginPage> {
                           SnackBar(content: Text('Login Succesful')),
                         );
                       }
+
+                      // Navigator.push(context,
+                      //   MaterialPageRoute(builder: (context)=>M8_Class_1())
+                      // );
+
                     }, child: Text('Login',)),
                   )
                 ],
               ),
-            ),
-          ],
+             ),
+           ],
+         ),
         ),
-                ),
       ),
     );
   }
