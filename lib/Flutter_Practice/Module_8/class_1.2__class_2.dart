@@ -87,9 +87,9 @@ class _LoginPageState extends State<LoginPage> {
                         );
                       }
 
-                      // Navigator.push(context,
-                      //   MaterialPageRoute(builder: (context)=>M8_Class_1())
-                      // );
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=>M8_Class_1())
+                      );
 
                     }, child: Text('Login',)),
                   )
