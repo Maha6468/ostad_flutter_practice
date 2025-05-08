@@ -17,13 +17,14 @@ class FlutterClass3 extends StatelessWidget {
           children: [
             ElevatedButton(
                 style:ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
+                //  backgroundColor: Colors.green,
                   foregroundColor: Colors.black,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   )
                 ),
                 onPressed: (){
+                  print('first button');
             }, child: Text('Buttom')
             ),
             SizedBox(height: 10,),
@@ -36,17 +37,25 @@ class FlutterClass3 extends StatelessWidget {
                     )
                 ),
                 onPressed: (){
-                }, child: Text('Buttom')
+                  print('second button');
+                }, child: Text('Button 2')
             ),
+            SizedBox(height: 10,),
             OutlinedButton(onPressed: (){
-
-            }, child: Text('outlineButton')
+              print('outline button');
+            }, child: Text('outlineButton',)
             ),
+            SizedBox(height: 10,),
             GestureDetector(
               onTap: (){
-                
+                print('gstButton');
               },
-              child: Text('gesturederecto'),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.yellowAccent,
+                ),
+                child: Text('GestureButton'),
+              ),
             ),
             SizedBox(height: 10,),
             Text(
