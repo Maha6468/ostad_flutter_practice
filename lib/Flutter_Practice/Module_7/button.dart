@@ -17,11 +17,10 @@ class Button extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-
               InkWell(
                 onTap:(){
                   print('one tap Inkwell');
-                },
+                },child: Text('saim'),
               ),
               TextButton(
                 style:TextButton.styleFrom(backgroundColor: Colors.amberAccent,
