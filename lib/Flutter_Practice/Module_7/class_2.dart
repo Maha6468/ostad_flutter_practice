@@ -35,9 +35,7 @@ class MyApp extends StatelessWidget{
                     , icon:Icon(Icons.access_alarms_outlined)),
                 IconButton(onPressed:(){}
                     , icon:Icon(Icons.add_alert_rounded))
-
               ]
-
           ),
           body:Center(
             child: Text('Hello Body',

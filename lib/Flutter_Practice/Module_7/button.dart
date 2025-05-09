@@ -26,7 +26,6 @@ class Button extends StatelessWidget {
                 style:TextButton.styleFrom(backgroundColor: Colors.amberAccent,
                     shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(4))
                 ),
-
                 onPressed: (){
                   print('maha tap');
                 }, child: Text('save'),
@@ -38,7 +37,6 @@ class Button extends StatelessWidget {
                   child:Text('Arif')
               ),
               SizedBox(height: 20,),
-
               Container(
                 height: 50,
                 width: 150,

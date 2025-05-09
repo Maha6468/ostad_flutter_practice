@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyanAccent),
         useMaterial3: false,
       ),
-      home:Button(),
+      home:FlutterClass3(),
     );
   }
 }
