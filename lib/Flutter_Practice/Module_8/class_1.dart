@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class M8_Class_1 extends StatelessWidget {
   const M8_Class_1({super.key});
-
   @override
   Widget build(BuildContext context) {
     TextEditingController phoneController=TextEditingController();
@@ -18,9 +17,9 @@ class M8_Class_1 extends StatelessWidget {
             ElevatedButton(
                 style:ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
-                    foregroundColor: Colors.black,
+                    foregroundColor: Colors.red,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                     )
                 ),
                 onPressed: (){
@@ -32,31 +31,32 @@ class M8_Class_1 extends StatelessWidget {
                     backgroundColor: Colors.green,
                     foregroundColor: Colors.black,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(10),
                     )
                 ),
                 onPressed: (){
                 }, child: Text('Buttom')
             ),
+            SizedBox(height: 10,),
             OutlinedButton(onPressed: (){
 
             }, child: Text('outlineButton')
             ),
-            SizedBox(height: 30,),
+            SizedBox(height: 10,),
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20),
+              padding: const EdgeInsets.only(left: 30,right: 30),
               child: TextField(
                 controller: phoneController,
-                //obscureText: true,
-                keyboardType: TextInputType.phone,
+               // obscureText: true,
+                //keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
                  // filled: true,
-                  fillColor: Colors.purpleAccent,
+                  fillColor: Colors.yellowAccent,
                   prefixIcon: Icon(Icons.phone),
                     suffixIcon: Icon(Icons.check),
                     hintText: 'Enter your name',
                   labelText: 'phone number',
-                  labelStyle:TextStyle(color: Colors.deepOrangeAccent) ,
+                  labelStyle:TextStyle(color: Colors.yellow) ,
                   border:OutlineInputBorder(
 
                   )
