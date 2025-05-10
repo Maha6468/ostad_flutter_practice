@@ -17,8 +17,15 @@ class _M9C2State extends State<M9C2> {
       body:SingleChildScrollView(
         child: Column(
           children: [
-
-
+            SizedBox(height: 10,),
+            FractionallySizedBox(
+              widthFactor: 0.5,
+              child: ElevatedButton(
+                onPressed: (){},
+                child: Text('Submit'),
+              ),
+            ),
+            SizedBox(height: 6,),
 
 
             Row(
