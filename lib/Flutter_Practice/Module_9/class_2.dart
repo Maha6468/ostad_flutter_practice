@@ -23,6 +23,33 @@ class _M9C2State extends State<M9C2> {
 
             Row(
               children: [
+                Flexible(
+                  flex: 2,
+                  child: Container(
+                    height: 100,
+                    color: Colors.green,
+                  ),
+                ),
+                Flexible(
+                  flex: 2,
+                  child: Container(
+                    height: 100,
+                    color: Colors.yellow,
+                  ),
+                ),
+                Flexible(
+                  flex: 1,
+                  child: Container(
+                    height: 100,
+                    color: Colors.redAccent,
+                  ),
+                )
+              ],
+            ),
+
+
+            Row(
+              children: [
                 Expanded(flex: 2,child: ElevatedButton(onPressed: (){}, child: Text('person-1'))),
                 Expanded(child: ElevatedButton(onPressed: (){}, child: Text('person-2'))),
                 Expanded(child: ElevatedButton(onPressed: (){}, child: Text('person-3'))),
