@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+class M9C2 extends StatefulWidget {
+  const M9C2({super.key});
+
+  @override
+  State<M9C2> createState() => _M9C2State();
+}
+
+class _M9C2State extends State<M9C2> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar:AppBar(
+        title: Text('Module 9 class 2'),
+      ),
+      body:SingleChildScrollView(
+        child: Column(
+          children: [
+            AspectRatio(aspectRatio: 16/9,
+            child: Container(
+              color: Colors.orange,
+            ),
+            ),
+            AspectRatio(aspectRatio: 9/16,
+              child: Container(
+                color: Colors.red,
+              ),
+            ),
+            AspectRatio(
+                aspectRatio: 16 / 10,
+                child: Container(
+                  color: Colors.green,
+                )
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
