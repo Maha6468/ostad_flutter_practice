@@ -31,13 +31,14 @@ class _LoginPageState extends State<LoginPage> {
             Image.asset('images/maha.jpg',
             height: 200,
             width: 150,
-            fit: BoxFit.fitHeight,),
+            fit: BoxFit.fitHeight,
+            ),
             //Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Facebook_logo_%282023%29.svg/2560px-Facebook_logo_%282023%29.svg.png',),
             SizedBox(height: 20,),
             Text('login with your phone and password'),
-            SizedBox(height:5,),
+            SizedBox(height:30),
             Form(
-              key: _formKey,
+              key: _formKey,  //next page a jabe
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -48,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
                       decoration: InputDecoration(
                           hintText: 'Phone number',
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(50)
+                              borderRadius: BorderRadius.circular(100)
                           )
                       ),
                       validator: (value){
@@ -61,6 +62,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   SizedBox(height: 5,),
                   TextFormField(
+                    obscureText: true,
                     controller: passwordController,
                       decoration: InputDecoration(
                           hintText: 'Password',
@@ -81,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   SizedBox(height: 5,),
                   SizedBox(
-                    width: 300,
+                    width: 100,
 
                     child: ElevatedButton(onPressed: (){
                       if(_formKey.currentState!.validate()){
