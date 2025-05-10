@@ -17,6 +17,7 @@ class _M9C2State extends State<M9C2> {
       body:SingleChildScrollView(
         child: Column(
           children: [
+
             SizedBox(height: 10,),
             FractionallySizedBox(
               widthFactor: 0.5,
@@ -26,6 +27,23 @@ class _M9C2State extends State<M9C2> {
               ),
             ),
             SizedBox(height: 6,),
+
+            Container(
+
+              margin: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black,width: 2)
+              ),
+
+              height: 300,
+              child: FractionallySizedBox(
+                heightFactor: 0.5,
+                child: Container(
+                  color: Colors.blue,
+                  child: Center(child: Text('This is fg')),
+                ),
+              ),
+            ),
 
 
             Row(
