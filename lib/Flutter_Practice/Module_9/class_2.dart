@@ -17,6 +17,19 @@ class _M9C2State extends State<M9C2> {
       body:SingleChildScrollView(
         child: Column(
           children: [
+
+
+
+
+            Row(
+              children: [
+                Expanded(flex: 2,child: ElevatedButton(onPressed: (){}, child: Text('person-1'))),
+                Expanded(child: ElevatedButton(onPressed: (){}, child: Text('person-2'))),
+                Expanded(child: ElevatedButton(onPressed: (){}, child: Text('person-3'))),
+              ],
+            ),
+
+
             AspectRatio(aspectRatio: 16/9,
             child: Container(
               color: Colors.orange,
