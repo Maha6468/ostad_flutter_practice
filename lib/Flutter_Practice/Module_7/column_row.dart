@@ -14,9 +14,10 @@ class RowColumn extends StatelessWidget {
       body:SingleChildScrollView(
         child: Column(
             children: [
-              Image.asset('images/ma.jpg',
-                height: 300,
-                width:double.infinity,fit:BoxFit.cover,
+              Image.asset('images/mari.jpg',
+                height:550,
+                width:double.infinity,
+                fit:BoxFit.cover,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -30,7 +31,7 @@ class RowColumn extends StatelessWidget {
                   )
                 ],
               ),
-              Text('Beautiful nature',style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold),),
+             // Text('Beautiful nature',style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold),),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
@@ -55,7 +56,7 @@ class RowColumn extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Icon(Icons.map,size: 35.0,color: Colors.green,),
+                          Icon(Icons.location_city,size: 35.0,color: Colors.green,),
                           Text('location',style: TextStyle(fontSize: 22),),
                         ],
                       ),
