@@ -23,14 +23,15 @@ class Button extends StatelessWidget {
                 },child: Text('saim'),
               ),
               TextButton(
-                style:TextButton.styleFrom(backgroundColor: Colors.amberAccent,
+                style:TextButton.styleFrom(backgroundColor: Colors.pink,
                     shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(4))
                 ),
                 onPressed: (){
                   print('maha tap');
                 }, child: Text('save'),
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 200,),
+              Divider(height: 100,),
               OutlinedButton(onPressed: (){
                 print('this is arif');
               },
@@ -41,10 +42,10 @@ class Button extends StatelessWidget {
                 height: 50,
                 width: 150,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.blue,
                   borderRadius:BorderRadius.circular(25),
                   boxShadow:[
-                    BoxShadow(color: Colors.yellowAccent,offset: Offset(.9, 30.4),blurRadius: 1)
+                    BoxShadow(color: Colors.purple,offset: Offset(20, 30.4),blurRadius: 5)
                   ],
                 ),
                 child: ElevatedButton(
