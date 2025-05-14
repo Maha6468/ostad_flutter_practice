@@ -14,6 +14,7 @@ class M8_Class_1 extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            SizedBox(height: 10,),
             ElevatedButton(
                 style:ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
@@ -25,7 +26,7 @@ class M8_Class_1 extends StatelessWidget {
                 onPressed: (){
                 }, child: Text('B')
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 8,),
             ElevatedButton(
                 style:ElevatedButton.styleFrom(
                     backgroundColor: Colors.green,
@@ -71,7 +72,11 @@ class M8_Class_1 extends StatelessWidget {
               }
               else if(phoneController.text.length<11){
                 print('please enter 11 dizit');
-              }else{
+              }
+              else if (phoneController.text.length>11){
+                print('over 11 digit ,please enter 11 digit');
+              }
+              else{
                 print('your number is ${phoneController.text}');
               }
             }, child:Text('Submit'),
