@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('messenger',
+        title: Text('Messenger',
           style: TextStyle(fontSize: 30.5,
             color: Colors.white,
             fontWeight: FontWeight.w900,

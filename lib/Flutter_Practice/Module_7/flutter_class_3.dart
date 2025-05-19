@@ -18,7 +18,7 @@ class FlutterClass3 extends StatelessWidget {
             ElevatedButton(
                 style:ElevatedButton.styleFrom(
                   backgroundColor: Colors.green,
-                  foregroundColor: Colors.black,
+                  foregroundColor: Colors.green,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   )

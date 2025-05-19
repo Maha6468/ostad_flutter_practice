@@ -12,7 +12,8 @@ class _M9C2State extends State<M9C2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        title: Text('Module 9 class 2'),
+        title: Text('Module 9 CLASS 2'),
+        centerTitle: true,
       ),
       body:SingleChildScrollView(
         child: Column(
@@ -23,7 +24,7 @@ class _M9C2State extends State<M9C2> {
               widthFactor: 0.5,
               child: ElevatedButton(
                 onPressed: (){},
-                child: Text('Submit'),
+                child: Text('SUBMIT'),
               ),
             ),
             SizedBox(height: 6,),
@@ -40,7 +41,7 @@ class _M9C2State extends State<M9C2> {
                 heightFactor: 0.5,
                 child: Container(
                   color: Colors.blue,
-                  child: Center(child: Text('This is fg')),
+                  child: Center(child: Text('This is FG')),
                 ),
               ),
             ),

@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
             //Image.network('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Facebook_logo_%282023%29.svg/2560px-Facebook_logo_%282023%29.svg.png',),
             SizedBox(height: 20,),
             Text('login with your phone and password'),
-            SizedBox(height:30),
+            SizedBox(height:20),
             Form(
               key: _formKey,  //next page a jabe
               child: Column(
