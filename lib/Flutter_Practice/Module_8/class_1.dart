@@ -24,6 +24,7 @@ class M8_Class_1 extends StatelessWidget {
                     )
                 ),
                 onPressed: (){
+                  Navigator.pop(context);
                 }, child: Text('B')
             ),
             SizedBox(height: 8,),
