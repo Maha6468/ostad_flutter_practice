@@ -77,7 +77,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
           ),
           Row(
             children: [
-              buildButton(onClick:()=> buttomPress('7'), text: '7',),
+              buildButton(onClick:()=> buttomPress('7'), text: '7',radiuos: 50,),
               buildButton(onClick: ()=> buttomPress('8'), text: '8',),
               buildButton(onClick: ()=> buttomPress('9'), text: '9',),
               buildButton(onClick: ()=> buttomPress('÷'), text: '÷',color: Colors.orange,),
@@ -95,7 +95,7 @@ class _CalculatorAppState extends State<CalculatorApp> {
           ),
           Row(
             children: [
-              buildButton(onClick:()=> buttomPress('1'), text: '1',),
+              buildButton(onClick:()=> buttomPress('1'), text: '1',p: 100,),
               buildButton(onClick: ()=> buttomPress('2'), text: '2',),
               buildButton(onClick: ()=> buttomPress('3'), text: '3',),
               buildButton(onClick: ()=> buttomPress('-'), text: '-',color: Colors.orange,),
