@@ -16,7 +16,6 @@ class _CrudAppState extends State<CrudApp> {
 
   final TextEditingController nameController = TextEditingController();
 
-  // Fetch all users
   Future<void> fetchUsers() async {
     final response = await http.get(Uri.parse(baseUrl));
     if (response.statusCode == 200) {
@@ -25,26 +24,19 @@ class _CrudAppState extends State<CrudApp> {
       });
     }
   }
-
-  // Add user
   Future<void> addUser(String name) async {
     await http.post(Uri.parse(baseUrl), body: {'name': name});
     fetchUsers();
   }
 
-  // Update user
   Future<void> updateUser(int id, String name) async {
     await http.put(Uri.parse('$baseUrl/$id'), body: {'name': name});
     fetchUsers();
   }
-
-  // Delete user
   Future<void> deleteUser(int id) async {
     await http.delete(Uri.parse('$baseUrl/$id'));
     fetchUsers();
   }
-
-  // Dialog for Add/Edit
   void showForm({Map? user}) {
     nameController.text = user != null ? user['name'] : '';
     showDialog(
